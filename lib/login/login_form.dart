@@ -11,6 +11,7 @@ class LoginForm extends StatefulWidget {
 
 class _LoginFormState extends State<LoginForm> {
   // TODO: inicializar instacia de login bloc
+
   // para poder agregar eventos al bloc
   // al presionar los botones de login
 
