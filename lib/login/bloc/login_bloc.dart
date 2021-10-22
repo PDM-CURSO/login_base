@@ -22,7 +22,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     } catch (e) {
       emitState(
         LoginErrorState(
-          error: "Error al hacer login",
+          error: "Error al hacer login con google",
           code: e.toString(),
         ),
       );
