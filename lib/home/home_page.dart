@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:login_firebase/auth/bloc/auth_bloc.dart';
+import 'package:login_firebase/create/create_form.dart';
 import 'package:login_firebase/home/bloc/home_bloc.dart';
 
 class HomePage extends StatelessWidget {
@@ -48,6 +49,14 @@ class HomePage extends StatelessWidget {
             );
           },
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(FontAwesomeIcons.boxOpen),
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => CreateForm()),
+          );
+        },
       ),
     );
   }
